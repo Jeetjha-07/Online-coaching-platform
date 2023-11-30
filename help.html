@@ -1,0 +1,97 @@
+<!-- help.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help - Your Course Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Help Center</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#" onclick="closeHelpPage();">Return</a></li>
+            
+            <!-- Add more navigation links as needed -->
+        </ul>
+    </nav>
+
+    <main>
+        <section class="faqs">
+            <div class="faqs-header">
+                <h2>Frequently Asked Questions (FAQs)
+                <button class="faq-btn" onclick="toggleFAQs()">Check</button></h2>
+            </div>
+            
+            <div class="faq-container" id="faqContainer">
+                <div class="faq-item">
+                    <h3>1. How do I create an account?</h3>
+                    <p>Creating an account is easy. Visit the homepage and click on the "Sign Up" button...</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>2. How can I reset my password?</h3>
+                    <p>If you forget your password, you can reset it by clicking on the "Forgot Password" link on the login page...</p>
+                </div>
+
+                <!-- Add more FAQ items as needed -->
+            </div>
+            <hr>
+        </section>
+            <!-- for faq opening -->
+            <script src="code.js"></script>
+            <script>
+                function openHelpPage() {
+                    // Adjust the width and height according to your needs
+                    window.open('help.html', 'Help Page', 'width=600,height=400,resizable=yes');
+                }
+                function closeHelpPage() {
+                    if (helpPopup) {
+                        helpPopup.close();
+                    }
+                }
+                function toggleFAQs() {
+                    var faqContainer = document.getElementById('faqContainer');
+                    faqContainer.classList.toggle('open');
+                }
+            </script>
+
+        </section>
+        
+        <section class="submit-query">
+            <h2>Submit a Query</h2>
+            <form id="queryForm">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="query">Your Query:</label><br>
+                <textarea id="query" name="query" rows="4" required></textarea>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <hr>
+        <section class="customer-care">
+            <h2>Customer Care</h2>
+            <p>If you need immediate assistance, please contact our customer care from contact us menu</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Coderloder</p>
+    </footer>
+
+    <script src="code.js"></script>
+</body>
+
+</html>

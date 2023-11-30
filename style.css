@@ -1,0 +1,232 @@
+/* style.css */
+
+/* Common styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Login page styles */
+.login-body {
+    background-image: url(bck.jpg); /* Add the path to your blurred background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust the opacity as needed */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Homepage styles */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    margin: 0; /* Remove default margin */
+    padding: 20px;
+}
+hr {
+    margin: 5px 0; /* Adjust margin for <hr> elements */
+}
+nav {
+    color: aliceblue;
+    padding: 0.5rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+.faq-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.faq-container.open {
+    max-height: 500px; /* Adjust the maximum height as needed */
+}
+
+.faq-btn {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/* contrast colors */
+:root {
+    --primary-color: black;   /* Green */
+    --secondary-color: #4CAF50;  /* Red */
+    --background-color: #ECF0F1; /* Light Grayish Blue */
+    --text-color: #2C3E50;       /* Dark Grayish Blue */
+    --accent-color: #3498DB;     /* Blue */
+}
+
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    color: #fff; /* White text for better contrast */
+}
+
+nav {
+    background-color: var(--secondary-color);
+}
+
+.signup-container {
+    background-color: #fff; /* White content background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Add more styles based on your specific elements and design */
+
+/* for home content */
+.course-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.course {
+    width: 250px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.course img {
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-weight: bold;
+    color: #27ae60;
+}
+/* ... Your existing styles ... */
+
+.cart {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.cart-popup {
+    display: none;
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    width: 200px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.cart-popup button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* ... Your existing styles ... */
+/* ... Your existing styles ... */
+
+.checkout {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.checkout form {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout label {
+    margin-bottom: 8px;
+}
+
+.checkout input,
+.checkout textarea,
+.checkout select {
+    margin-bottom: 16px;
+    padding: 8px;
+}
+
+.checkout button {
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* ... Your existing styles ... */
+
+.cart {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.cart-popup,
+.checkout-popup {
+    display: none;
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    width: 200px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.cart-popup button,
+.checkout-popup button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* ... Your existing styles ... */
+

@@ -1,0 +1,253 @@
+<!-- home.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Your Course Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="code.js"></script>
+</head>
+
+<body style="background-color: black;">
+    <header
+        style="min-height: 1%;
+            text-align: center;
+            background-color: transparent;
+            font-family:cursive;
+            font-size: 1.7em;
+            font-weight: bold;
+            color: #3498db;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 0;
+            padding: 20px;">
+        <h1 style="color:wheat;">CoderLoder</h1><h3 style="color: thistle; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 0.7em;">Welcome to the learning-HUB,
+        Code the program Load the Knowledge</h3>
+        <div class="user-profile" onclick="openUserProfile()">
+            <img src="https://srcwap.com/wp-content/uploads/2022/08/stock-illustration-male-avatar-profile-picture-use.jpg" alt="Profile Picture"><br>
+            <span>Guest Account</span>
+        </div>
+        <style>
+            .user-profile {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+            }
+            .user-profile img {
+                border-radius: 50%;
+                margin-right: 5px;
+                height: 50px;
+                width: 50px;
+            }
+
+            .popup {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                justify-content: center;
+                align-items: center;
+            }
+            .popup-content {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                text-align: center;
+            }
+
+            .close {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                font-size: 20px;
+                cursor: pointer;
+                color: #3498db;
+            }
+        </style>
+    </header>
+
+    <nav >
+        <ul>
+            <a href="#Home" style="color: aliceblue;">Home</a>&nbsp;&nbsp;&nbsp;
+            <a href="#Home" style="color: aliceblue;">Courses</a>&nbsp;&nbsp;&nbsp;
+            <a href="#" onclick="openHelpPage();" style="color: aliceblue;">Help</a>&nbsp;&nbsp;&nbsp;
+            <a href="cont.html" style="color: aliceblue;">Contact</a>&nbsp;&nbsp;&nbsp;
+            <a href=login.html style="color: aliceblue;">Logout/login</a>&nbsp;&nbsp;&nbsp;
+
+            <!-- for help -->
+            <script src="code.js"></script>
+            <script>
+                function openHelpPage() {
+                // Adjust the width and height according to your needs
+                window.open('help.html', 'Help Page', 'width=600,height=400,resizable=yes');
+                }
+            </script>
+        </ul>
+    </nav>
+
+    <main style="background-color: aliceblue ;">
+        <section id="Home">
+        <h2 style="text-align: center;">Computer Science Courses</h2>
+        </section>
+        <div class="course-grid">
+            <div class="course">
+                <img src="https://e0.pxfuel.com/wallpapers/309/536/desktop-wallpaper-data-science-data-scientist.jpg" alt="Course 1 Thumbnail">
+                <h2>Data Science</h2>
+                <p>Language: Python, R</p>
+                <p style="font-size: 0.6em;">Learn the fundamentals of collecting, analyzing, and interpreting large datasets to extract valuable insights. Explore statistical models, machine learning algorithms, and data visualization techniques.</p>
+                <p class="price">Rs.5999/-</p>
+                <button>Add to Cart</button>
+            </div>
+        
+            <div class="course">
+                <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2150833157/settings_images/d74d251-04af-46de-ae8-4e2026466b28_Artificial_Intelligence_and_Machine_Learning_Training_Home_.png" alt="Course 2 Thumbnail">
+                <h2>AI and ML</h2>
+                <p>Language: Python</p>
+                <p style="font-size: 0.6em;">Dive into the world of artificial intelligence and machine learning. Understand algorithms that enable machines to learn patterns, make predictions, and enhance decision-making processes.</p>
+                <p class="price">Rs.7999/-</p>
+                <button>Add to Cart</button>
+            </div>
+            
+            <div class="course">
+                <img src="https://sit-academy.alemira.com/asset-v1:SITAcademy+CS2020+2020_T1+type@thumbnail+block@cyber_378_x_210px_02-png-750x400.jpg" alt="Course 2 Thumbnail">
+                <h2>Cyber Security</h2>
+                <p>Language: Python, Java, C</p>
+                <p style="font-size: 0.6em;"> Explore the principles and practices of securing computer systems, networks, and data from cyber threats. Learn about encryption, ethical hacking, and strategies for defending against cyber attacks.</p>
+                <p class="price">Rs.7999/-</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="course">
+                <img src="https://img.freepik.com/free-vector/website-development-banner_33099-1687.jpg" alt="Course 2 Thumbnail">
+                <h2>Web Development</h2>
+                <p>Full Stack- HTML, CSS, JavaScript, Python, Ruby, PHP</p>
+                <p style="font-size: 0.6em;">Master the skills to build dynamic and responsive websites. Learn front-end and back-end development, database management, and frameworks</p>
+                <p class="price">Rs.3999/-</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="course">
+                <img src="https://ap2vgurgaon.training/media/images/courses/cloud-computing-training-in-gurgaon-3.jpg" alt="Course 1 Thumbnail">
+                <h2>Cloud Computing</h2>
+                <p>Languages: Python(for AWS,Google)</p>
+                <p style="font-size: 0.6em;">Delve into cloud computing concepts and services. Understand how to deploy, manage, and scale applications using cloud platforms. Explore topics like Infrastructure as a Service (IaaS) and Platform as a Service (PaaS).</p>
+                <p class="price">Rs.4999/-</p>
+                <button>Add to Cart</button>
+            </div>
+        
+            <div class="course">
+                <img src="https://www.spaceo.ca/wp-content/uploads/2021/05/what-is-full-stack-development.jpg" alt="Course 2 Thumbnail">
+                <h2 style="width: 270px;">Software Development</h2>
+                <p>Languages: Java, C++, C#, Python</p><br>
+                <p style="font-size: 0.6em;">Gain a comprehensive understanding of software development principles and practices. Learn to design, code, test, and deploy software applications, following industry best practices.</p>
+                <p class="price">Rs.4999/-</p>
+                <button>Add to Cart</button>
+            </div>
+            
+            <div class="course">
+                <img src="https://t3.ftcdn.net/jpg/01/96/03/94/360_F_196039475_6MbF6oSsJJIQdSkS5sBUl52JfvYVSeNP.jpg" alt="Course 2 Thumbnail">
+                <h2>Software Testing</h2>
+                <p>Languages: Python, Java, and C#</p>
+                <p style="font-size: 0.6em;">Focus on quality assurance and software testing methodologies. Learn how to design and execute test cases, automate testing processes, and ensure the reliability of software applications.</p>
+                <p class="price">Rs.3999/-</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="course">
+                <img src="https://e1.pxfuel.com/desktop-wallpaper/105/899/desktop-wallpaper-mobile-app-development.jpg" alt="Course 2 Thumbnail">
+                <h2>App Development</h2>
+                <p>Languages: Java/Kotlin(Android), Swift(iOS), React Native</p>
+                <p style="font-size: 0.6em;">Explore mobile app development for Android and iOS platforms. Learn to build native or cross-platform applications, understand user interface design, and utilize app deployment strategies.</p>
+                <p class="price">Rs.7999/-</p>
+                <button>Add to Cart</button>
+            </div>
+            
+        
+        </div>
+        <h2 style="text-align: center;">Additional Courses for Personal Development </h2>
+        </section>
+        <div class="course-grid">
+            <div class="course">
+                <img src="https://i.pinimg.com/736x/7f/f0/f2/7ff0f2dcb75cca27caa6af63e5e3109e.jpg" alt="Course 1 Thumbnail">
+                <h2>Entrepreneurship I</h2>
+                <p style="font-size: 0.6em;">Learn the fundamentals of entrepreneurship, covering topics such as business ideation, market research, business planning, financial management, and strategies for launching and growing a successful startup.</p>
+                <p class="price">Rs.3499/-</p>
+                <button>Add to Cart</button>
+            </div>
+        
+            <div class="course">
+                <img src="https://www.constructionplacements.com/wp-content/uploads/2018/10/Untitled-design-26.jpg.webp" alt="Course 2 Thumbnail">
+                <h2>Project management</h2>
+                <p  style="font-size: 0.6em;">Develop essential project management skills, including planning, organizing, and executing projects. Learn about project lifecycle, team collaboration, risk management, and effective communication.</p>
+                <p class="price">Rs.2999/-</p>
+                <button>Add to Cart</button>
+            </div>
+            
+            <div class="course">
+                <img src="https://i0.wp.com/d3d2ir91ztzaym.cloudfront.net/uploads/2022/02/career-confusions.png?fit=800%2C350&ssl=1" alt="Course 2 Thumbnail">
+                <h2 style="font-size: 1.3em;">Career Research & Development</h2>
+                <p  style="font-size: 0.6em;">Understand the importance of continuous career development. Explore strategies for identifying career goals, conducting industry research, building a professional network, and staying informed about industry trends.</p>
+                <p class="price">Rs.2999/-</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="course">
+                <img src="https://www.investopedia.com/thmb/G5H8epAD2VooUEqgfq-AKyeNRzo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/networking-Final-77a45edc6a2447ada51cb38929b69cbd.jpg" alt="Course 2 Thumbnail">
+                <h2>Networking Skills:</h2>
+                <p style="font-size: 0.6em;">Develop effective networking skills to build and maintain professional relationships. Learn strategies for networking online and offline, attending industry events, and leveraging connections for career growth..</p>
+                <p class="price">Rs.4999/-</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="course">
+                <img src="https://st.adda247.com/https://adda247jobs-wp-assets-adda247.s3.ap-south-1.amazonaws.com/jobs/wp-content/uploads/sites/2/2021/08/18143043/entrepreneurship-what-is-the-modern-definition-of-entrepreneur.jpg" alt="Course 1 Thumbnail">
+                <h2>Entrepreneurship II</h2>
+                <p style="font-size: 0.6em;">Learn the Advance concepts of entrepreneurship to elevate your business acumen with advanced strategies in market analysis, financial planning, and innovative leadership. Master the art of scaling ventures, navigating challenges, and driving sustained entrepreneurial success.</p>
+                <p class="price">Rs.4499/-</p>
+                <button>Add to Cart</button>
+            </div>
+        
+            <div class="course">
+                <img src="https://www.constructionplacements.com/wp-content/uploads/2018/10/Untitled-design-26.jpg.webp" alt="Course 2 Thumbnail">
+                <h2    style="font-size: 1.3em;">Leadership & Management</h2>
+                <p  style="font-size: 0.6em;"> Explore leadership principles and management techniques. Understand how to lead teams, make strategic decisions, and foster a positive and productive work environment.</p>
+                <p class="price">Rs.2499/-</p>
+                <button>Add to Cart</button>
+            </div>
+            
+            <div class="course">
+                <img src="https://canadianimmigrant.ca/wp-content/uploads/Time-management-skills-770x470.jpg" alt="Course 2 Thumbnail">
+                <h2>Time Management</h2>
+                <p  style="font-size: 0.6em;">Master time management techniques to increase productivity and efficiency. Learn how to prioritize tasks, set goals, and manage your time effectively in a fast-paced work environment.</p>
+                <p class="price">Rs.2999/-</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="course">
+                <img src="https://assets.thehansindia.com/h-upload/2021/07/25/1091149-financial-literacy.jpg" alt="Course 2 Thumbnail">
+                <h2>Financial Literacy</h2>
+                <p style="font-size: 0.6em;">Gain basic financial literacy skills, including budgeting, personal finance management, and an understanding of financial markets. Learn how to make informed financial decisions.</p>
+                <p class="price">Rs.3999/-</p>
+                <button>Add to Cart</button>
+            </div>
+        
+        </div>
+        <div class="cart">
+            <button onclick="showCart()">View Cart</button>
+            <div class="cart-popup" id="cartPopup">
+                <h2>Your Cart</h2>
+                <p>Your cart is currently empty.</p>
+                <button onclick="closeCart()">Close Cart</button>
+                <button onclick="redirectToPayment()">Checkout</button>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Coderloder</p>
+    </footer>
+
+    <script src="code.js"></script>
+</body>
+
+</html>
